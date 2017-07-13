@@ -1,0 +1,37 @@
+<ion-nav-bar class="bar-balanced" align-title="center" >
+    <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+    </ion-nav-buttons>
+    <ion-nav-title>
+        Home
+    </ion-nav-title>
+</ion-nav-bar>
+
+<ion-view>
+	<ion-content padding="true" class="note-content has-header" style="background-color: #4CAF50;">
+		<div class="row">
+			<div class="col">
+				<h2 class="text-center" style="color: white; font-weight: bold;">Baby Prone Detector</h2>
+			</div>
+		</div>
+		
+		<span style="color: white; font-weight: bold; font-size: 20px;">Name: </span>
+		<input type="text" ng-model="name" style="width: 100%; padding: 10px;" />
+
+		<br/>
+
+		<span style="color: white; font-weight: bold; font-size: 20px;">Gender: </span> <br/>
+		<div class="input" style="font-weight: bold; color: white; ">
+			<input type="radio" ng-model="gender" name="gender_rep" value="Male" style="margin:15px;" /> Male <br/>
+			<input type="radio" ng-model="gender" name="gender_rep" value="Female" style="margin:15px;" /> Female
+		</div>
+
+		<button class="button button-block button-royal" ui-sref="startApp({name_set:name, gender_set:gender})" ng-disabled="!gender || !name" style="font-weight: bold;">Start</button>
+
+		<div class="row" style="margin-top: 40px;">
+			<img src="img/baby.png" style="margin:auto; width: 180px; height: 180px;" />
+		</div>
+
+	</ion-content>
+</ion-view>

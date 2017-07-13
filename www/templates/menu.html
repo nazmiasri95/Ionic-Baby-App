@@ -1,0 +1,34 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+    <!-- Pelanggan Side Menu -->
+    <ion-side-menu side="left">
+        <ion-content has-header="true" class="stable-bg has-expanded-header" ng-controller="MenuCtrl">
+            <ion-list class="transparent">
+            
+                <ion-item  class="yep item-icon-left" nav-clear menu-close ui-sref="app.main">
+                    <i class="icon ion-home"></i>
+                    Home
+                </ion-item>
+
+                <ion-item menu-close class="yep item-icon-left" nav-clear ui-sref="app.about">
+                    <i class="icon ion-paper-airplane"></i>
+                    About Us
+                </ion-item>
+
+            </ion-list>
+        </ion-content>
+    </ion-side-menu> <!-- End Pelanggan Side Menu -->
+
+</ion-side-menus>

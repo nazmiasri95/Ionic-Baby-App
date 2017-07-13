@@ -1,0 +1,47 @@
+<ion-nav-bar class="bar-balanced" align-title="center" >
+    <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+    </ion-nav-buttons>
+    <ion-nav-title>
+        Baby Prone Detector
+    </ion-nav-title>
+</ion-nav-bar>
+
+<ion-view>
+	<ion-content padding="true" class="note-content has-header" style="background-color: #4CAF50;">
+		<div class="row">
+			<div class="col">
+				<h3 style="color: white;">Name: {{name}}</h3>
+				<h3 style="color: white;">Gender: {{gender}}</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			{{ data }}
+		</div>
+
+		<div class="row" style="color: red; margin-top: 50px;">
+			<div class="col" style="background-color: #AED581; border: 2px solid #1B5E20; min-height: 150px; height: auto;">
+				Col
+			</div>
+			<div class="col" style="background-color: #AED581; border: 2px solid #1B5E20; min-height: 150px; height: auto;">
+				Col
+			</div>
+		</div>
+
+		<div class="row" style="color: white; margin-top: 5px; font-weight: bold;">
+			<div class="col" align="center">
+				Heart Rate is Good
+			</div>
+			<div class="col" align="center">
+				I am Stable
+			</div>
+		</div>
+
+		<div class="row" style="margin-top: 40px;">
+			<img src="img/baby.png" style="margin:auto; width: 180px; height: 180px;" ng-click="notify()" />
+		</div>
+
+	</ion-content>
+</ion-view>
